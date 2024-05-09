@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: #e0eae9;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="maranich_nkdeb.TP_POO.Stats0Controller">
+    <children>
+        <BorderPane>
+            <left>
+                <fx:include source="sideBar.fxml" />
+            </left>
+        </BorderPane>
+        <Label layoutX="224.0" layoutY="23.0" prefHeight="27.0" prefWidth="502.0" text="Choisissez quelle statistiques boulez vous avoir ?" textFill="#425c59">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+      <Button layoutX="353.0" layoutY="151.0" mnemonicParsing="false" onAction="#etat" prefHeight="77.0" prefWidth="149.0" style="-fx-background-color: #425c59;" text="Etat de réalisation des tâches de la journée" textAlignment="CENTER" textFill="#e0eae9" wrapText="true">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button layoutX="576.0" layoutY="151.0" mnemonicParsing="false" onAction="#badge" prefHeight="77.0" prefWidth="149.0" style="-fx-background-color: #425c59;" text="Nombre / types de Badges gagnés" textAlignment="CENTER" textFill="#e0eae9" wrapText="true">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="353.0" layoutY="272.0" mnemonicParsing="false" onAction="#rendement" prefHeight="77.0" prefWidth="149.0" style="-fx-background-color: #425c59;" text="Rendement journalier" textAlignment="CENTER" textFill="#e0eae9" wrapText="true">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="576.0" layoutY="272.0" mnemonicParsing="false" onAction="#encouragement" prefHeight="77.0" prefWidth="149.0" style="-fx-background-color: #425c59;" text="Nombre d'encouragements obtenus" textAlignment="CENTER" textFill="#e0eae9" wrapText="true">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

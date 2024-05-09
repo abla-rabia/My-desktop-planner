@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane focusTraversable="true" prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: #e0eae9;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="maranich_nkdeb.TP_POO.NewCrController">
+    <children>
+        <BorderPane />
+        <fx:include source="sideBar.fxml" />
+        <VBox layoutX="254.0" layoutY="108.0" spacing="30.0">
+            <children>
+                <HBox>
+               <children>
+                        <Label prefHeight="25.0" prefWidth="163.0" text="Heure début">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font>
+                        </Label>
+               </children></HBox>
+                <HBox />
+            <Label prefHeight="25.0" prefWidth="163.0" text="Heure fin">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            </children>
+        </VBox>
+        <Label layoutX="234.0" layoutY="29.0" text="Nouveau créneau" textFill="#425c59">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Button layoutX="791.0" layoutY="421.0" mnemonicParsing="false" onAction="#ajouterClicked" prefHeight="34.0" prefWidth="71.0" style="-fx-background-color: #425c59; -fx-border-radius: 5px;" text="Ajouter" textAlignment="CENTER" textFill="#e0eae9" wrapText="true">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+        <Button layoutX="230.0" layoutY="425.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="71.0" style="-fx-background-color: #425c59; -fx-border-radius: 5px;" text="Retour" textAlignment="CENTER" textFill="#e0eae9" wrapText="true">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+      <Spinner fx:id="time_spinner" editable="true" layoutX="535.0" layoutY="108.0" prefHeight="25.0" prefWidth="59.0" />
+      <Spinner fx:id="time_spinner2" editable="true" layoutX="450.0" layoutY="108.0" prefHeight="25.0" prefWidth="59.0" />
+      <Label layoutX="522.0" layoutY="111.0" text=":">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Spinner fx:id="time_spinnerr" editable="true" layoutX="535.0" layoutY="191.0" prefHeight="25.0" prefWidth="59.0" />
+      <Spinner fx:id="time_spinnerr2" editable="true" layoutX="450.0" layoutY="191.0" prefHeight="25.0" prefWidth="59.0" />
+      <Label layoutX="522.0" layoutY="194.0" text=":">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="253.0" layoutY="314.0" prefHeight="25.0" prefWidth="328.0" text="Voulez vous le répéter chaque jour de la periode ? ">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="non" layoutX="683.0" layoutY="318.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="61.0" text="NON">
+         <toggleGroup>
+            <ToggleGroup fx:id="GRP" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="oui" layoutX="594.0" layoutY="318.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="90.0" text="OUI" toggleGroup="$GRP" />
+
+    </children>
+</AnchorPane>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="330.0" prefWidth="540.0" fx:controller="maranich_nkdeb.TP_POO.periodique" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="CENTER" layoutY="112.0" prefHeight="35.0" prefWidth="540.0" text="Periodique ?">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="138.0" layoutY="198.0" mnemonicParsing="false" onAction="#ouiPeriodique" prefHeight="25.0" prefWidth="76.0" text="Oui" />
+      <Button layoutX="325.0" layoutY="198.0" mnemonicParsing="false" onAction="#nonPeriodique" prefHeight="25.0" prefWidth="76.0" text="Non" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: #e0eae9;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="maranich_nkdeb.TP_POO.StatsEtatController">
+    <children>
+        <BorderPane>
+            <left>
+                <fx:include source="sideBar.fxml" />
+            </left>
+        </BorderPane>
+        <Label layoutX="224.0" layoutY="23.0" prefHeight="27.0" prefWidth="502.0" text="Etat de réalisation des tâches de la journée" textFill="#425c59">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+      <Rectangle arcHeight="70.0" arcWidth="70.0" fill="#c99f2a" height="189.0" layoutX="251.0" layoutY="77.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="160.0" />
+      <Circle fill="#e0eae9" layoutX="331.0" layoutY="145.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Label fx:id="completed" alignment="CENTER" contentDisplay="CENTER" layoutX="309.0" layoutY="127.0" prefHeight="35.0" prefWidth="43.0" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="70.0" arcWidth="70.0" fill="#c99f2a" height="189.0" layoutX="450.0" layoutY="77.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="160.0" />
+      <Circle fill="#e0eae9" layoutX="530.0" layoutY="145.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Label fx:id="cancelled" alignment="CENTER" contentDisplay="CENTER" layoutX="508.0" layoutY="127.0" prefHeight="35.0" prefWidth="43.0" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="70.0" arcWidth="70.0" fill="#c99f2a" height="189.0" layoutX="641.0" layoutY="77.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="160.0" />
+      <Circle fill="#e0eae9" layoutX="721.0" layoutY="145.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Label fx:id="inprogress" alignment="CENTER" contentDisplay="CENTER" layoutX="699.0" layoutY="127.0" prefHeight="35.0" prefWidth="43.0" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="70.0" arcWidth="70.0" fill="#c99f2a" height="189.0" layoutX="351.0" layoutY="294.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="160.0" />
+      <Circle fill="#e0eae9" layoutX="431.0" layoutY="362.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Label fx:id="delayed" alignment="CENTER" contentDisplay="CENTER" layoutX="409.0" layoutY="344.0" prefHeight="35.0" prefWidth="43.0" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="70.0" arcWidth="70.0" fill="#c99f2a" height="189.0" layoutX="549.0" layoutY="294.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="160.0" />
+      <Circle fill="#e0eae9" layoutX="629.0" layoutY="362.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Label fx:id="notrealized" alignment="CENTER" contentDisplay="CENTER" layoutX="607.0" layoutY="344.0" prefHeight="35.0" prefWidth="43.0" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="280.0" layoutY="183.0" prefHeight="72.0" prefWidth="105.0" text="Tâches Completed" textAlignment="CENTER" textFill="#425c59" wrapText="true">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="477.0" layoutY="183.0" prefHeight="72.0" prefWidth="105.0" text="Tâches Cancelled" textAlignment="CENTER" textFill="#425c59" wrapText="true">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="668.0" layoutY="183.0" prefHeight="72.0" prefWidth="105.0" text="Tâches In Progress" textAlignment="CENTER" textFill="#425c59" wrapText="true">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="378.0" layoutY="403.0" prefHeight="72.0" prefWidth="105.0" text="Tâches Delayed" textAlignment="CENTER" textFill="#425c59" wrapText="true">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="576.0" layoutY="403.0" prefHeight="72.0" prefWidth="105.0" text="Tâches not Realized" textAlignment="CENTER" textFill="#425c59" wrapText="true">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

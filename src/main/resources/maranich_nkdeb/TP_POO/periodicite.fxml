@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="330.0" prefWidth="540.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="maranich_nkdeb.TP_POO.periodicite">
+    <children>
+        <Label alignment="CENTER" layoutY="75.0" prefHeight="35.0" prefWidth="540.0" text="Entrer la periodicité :">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Button layoutX="232.0" layoutY="227.0" mnemonicParsing="false" onAction="#valider" prefHeight="25.0" prefWidth="76.0" text="Valider" />
+      <TextField fx:id="per" layoutX="196.0" layoutY="140.0" />
+    </children>
+</AnchorPane>

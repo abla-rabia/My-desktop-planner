@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: #e0eae9;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="maranich_nkdeb.TP_POO.PlanningController">
+    <children>
+        <BorderPane prefWidth="354.0">
+            <left>
+                <fx:include source="sideBar.fxml" />
+            </left>
+        </BorderPane>
+        <Button layoutX="415.0" layoutY="145.0" mnemonicParsing="false" onAction="#listPlanOnClick" prefHeight="120.0" prefWidth="120.0" style="-fx-background-color: #425c59; -fx-border-radius: 5px;" text="Historique des Plannings" textAlignment="CENTER" textFill="#e0eae9" wrapText="true">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Button>
+        <Button layoutX="570.0" layoutY="145.0" mnemonicParsing="false" onAction="#newplanOnClick" prefHeight="120.0" prefWidth="120.0" style="-fx-background-color: #425c59; -fx-border-radius: 5px;" text="Nouveau Planning" textAlignment="CENTER" textFill="#e0eae9" wrapText="true">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Button>
+        <Label layoutX="233.0" layoutY="21.0" text="Planning" textFill="#425c59">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Button layoutX="255.0" layoutY="146.0" mnemonicParsing="false" onAction="#planActOnClick" prefHeight="120.0" prefWidth="120.0" style="-fx-background-color: #425c59; -fx-border-radius: 5px;" text="Planning Actuel" textAlignment="CENTER" textFill="#e0eae9" wrapText="true">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Button>
+      <Button layoutX="727.0" layoutY="145.0" mnemonicParsing="false" onAction="#tachesnonprgm" prefHeight="120.0" prefWidth="120.0" style="-fx-background-color: #425c59; -fx-border-radius: 5px;" text="Tâches non programmées" textAlignment="CENTER" textFill="#e0eae9" wrapText="true">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="420.0" layoutY="294.0" mnemonicParsing="false" onAction="#addtache" prefHeight="43.0" prefWidth="233.0" style="-fx-background-color: #425c59; -fx-border-radius: 5px;" text="Ajouter une tâche" textAlignment="CENTER" textFill="#e0eae9" wrapText="true">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+          </children>
+</AnchorPane>
